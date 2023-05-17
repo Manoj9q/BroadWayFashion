@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:layout_width="match_parent"
+        app:cardElevation="@dimen/_4sdp"
+        app:cardMaxElevation="@dimen/_4sdp"
+        android:elevation="@dimen/_4sdp"
+        android:layout_height="wrap_content">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgMap"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/store_image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tvStoreName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:fontFamily="@font/app_semi_bold"
+            android:text="Toronto Premium Outlets"
+            android:textColor="@color/theme_color"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgMap" />
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/tvTiming"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:drawableLeft="@drawable/ic_marker_location"
+            android:drawablePadding="@dimen/_5sdp"
+            android:fontFamily="@font/app_regular"
+            android:padding="@dimen/_5sdp"
+            android:text="13850 Steeles Ave. W. Unit# 355, Halton Hills, ON. L7G 0J1"
+            android:textColor="@color/c_545454"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvStoreName" />
+
+        <TextView
+            android:id="@+id/tvContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:backgroundTint="@color/c_545454"
+            android:drawableLeft="@drawable/ic_contact_profile"
+            android:drawablePadding="@dimen/_5sdp"
+            android:drawableTint="@color/c_545454"
+            android:fontFamily="@font/app_regular"
+            android:padding="@dimen/_5sdp"
+            android:text="(905) 693 4883"
+            android:textColor="@color/c_545454"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvAddress" />
+
+
+        <TextView
+            android:id="@+id/tvHWorking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:fontFamily="@font/app_regular"
+            android:text="Hours Working"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgMap" />
+
+
+        <TextView
+            android:id="@+id/tvTiming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:gravity="end"
+            android:fontFamily="@font/app_regular"
+            android:text="Mon-Fri: 10 a.m. - 9 p.m. \nSat: 10 a.m. - 6 p.m. \nSun: 11 a.m. - 6 p.m."
+            android:textColor="@color/c_545454"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHWorking" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

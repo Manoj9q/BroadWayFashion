@@ -1,0 +1,9 @@
+
+=kotlin:S125F"Remove this commented out code.(¨Ïð…8×í‡«÷0
+Gkotlin:S18742"#Deprecated code should not be used.(ï†ßÌþÿÿÿÿ8ðèŠ«÷0
+Gkotlin:S18744"#Deprecated code should not be used.(ý˜È…ÿÿÿÿÿ8¦üŠ«÷0
+Gkotlin:S18744"#Deprecated code should not be used.(ý˜È…ÿÿÿÿÿ8¦üŠ«÷0
+Kkotlin:S1144V"3Remove this unused private "triggerRebirth" method.( ë«Õ
+rkotlin:S1186!"ZAdd a nested comment explaining why this function is empty or complete the implementation.(ç¿«›
+wkotlin:S1186+"ZAdd a nested comment explaining why this function is empty or complete the implementation.(ßó®Ïþÿÿÿÿ
+Lkotlin:S1066†".Merge this "if" statement with the nested one.(‘¼›ðøÿÿÿÿ

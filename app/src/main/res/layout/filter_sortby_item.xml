@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_margin="@dimen/_7sdp"
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_grey_border"
+            android:fontFamily="@font/app_regular"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingTop="@dimen/_7sdp"
+            android:paddingEnd="@dimen/_12sdp"
+            android:paddingBottom="@dimen/_7sdp"
+            android:visibility="visible"
+            android:minWidth="@dimen/_36sdp"
+            android:text="-"
+            android:gravity="center_horizontal|center"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/_11sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:layout_margin="@dimen/_7sdp"
+            android:backgroundTint="@color/theme_color"
+            android:id="@+id/tvTitleSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_grey_border"
+            android:fontFamily="@font/app_regular"
+            android:paddingStart="@dimen/_12sdp"
+            android:gravity="center_horizontal|center"
+            android:minWidth="@dimen/_36sdp"
+            android:paddingTop="@dimen/_7sdp"
+            android:drawableTint="@color/theme_color"
+            android:paddingEnd="@dimen/_12sdp"
+            android:paddingBottom="@dimen/_7sdp"
+            android:text="-"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

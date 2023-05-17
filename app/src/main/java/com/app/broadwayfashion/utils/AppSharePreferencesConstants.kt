@@ -1,0 +1,20 @@
+package com.app.broadwayfashion.utils
+
+
+const val COUNTRY_CODE = "country_code"
+const val USER_MOBILE = "user_mobile"
+const val LAST_PAGE = "last_page"
+const val USER_SELF_ID = "self_user_id"
+const val PASSWORD = "password"
+const val USER_FIRST_NAME = "first_name"
+const val USER_LAST_NAME = "last_name"
+const val USER_EMAIL = "email"
+const val USER_AUTH_TOKEN = "auth_token"
+const val USER_USER_NAME_ID = "username"
+const val LAST_ADMIN_TOKEN_SYNC = "sync_time"
+const val PARENT_AUTH_TOKEN = "parent_auth_token"
+const val IS_CONTACT_SYNC = "is_contact_sync"
+const val IS_DASHBOARD = "is_dashboard"
+const val GUEST_ADD_TO_CART = "guest_add_to_cart"
+const val LAST_LOGIN_USER_ID_EMAIL = "last_login_name"
+const val LAST_PASSWORD = "last_password"

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!--    <domain-config cleartextTrafficPermitted="true">
+           &lt;!&ndash; <domain includeSubdomains="true">http://54.167.243.119:8090</domain>&ndash;&gt;
+            <domain includeSubdomains="true">http://54.159.78.191:8090</domain>
+            <domain includeSubdomains="true"> https://litfam-dev-mobile</domain>
+            <domain includeSubdomains="true"> https://litfam-qa-mobile</domain>
+        </domain-config>-->
+
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

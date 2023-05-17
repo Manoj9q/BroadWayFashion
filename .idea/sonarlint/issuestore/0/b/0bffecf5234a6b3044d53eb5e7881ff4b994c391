@@ -1,0 +1,7 @@
+
+Akotlin:S1481³")Remove this unused "desc" local variable.(–×ñE
+7kotlin:S1128"Remove this unused import.(Â’øÉûÿÿÿÿ
+6kotlin:S125"Remove this commented out code.(æö
+jkotlin:S3776<"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Û±¸°
+Lkotlin:S1144É".Remove this unused private "bindData2" method.(¨­Úúûÿÿÿÿ
+Fkotlin:S1066¾".Merge this "if" statement with the nested one.(­°ºg

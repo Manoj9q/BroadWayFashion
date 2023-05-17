@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_4sdp"
+        app:cardBackgroundColor="@color/white"
+
+
+
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_95sdp"
+                android:layout_margin="@dimen/_3sdp"
+                android:background="@drawable/rounded_corners"
+                android:clipToOutline="true"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/placeholder" />
+
+            <TextView
+                android:id="@+id/tvProductTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:fontFamily="@font/app_bold2"
+                android:text="HD – Puffy Shoulder Crop Top – Lavender"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toStartOf="@+id/tvPrice"
+                app:layout_constraintStart_toEndOf="@+id/imgLogo"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:fontFamily="@font/app_bold2"
+                android:text="$67"
+                android:textColor="@color/theme_color"
+                android:textSize="@dimen/_15sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:fontFamily="@font/app_regular"
+                android:text="Quantity: 2"
+                android:textColor="@color/grey_edittext_hint"
+                android:textSize="@dimen/_9sdp"
+                app:layout_constraintStart_toEndOf="@+id/imgLogo"
+                app:layout_constraintTop_toBottomOf="@+id/tvProductTitle" />
+
+            <TextView
+                android:id="@+id/tvSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_minus3sdp"
+                android:fontFamily="@font/app_regular"
+                android:text="Size: M"
+                android:textColor="@color/grey_edittext_hint"
+                android:textSize="@dimen/_9sdp"
+                app:layout_constraintStart_toEndOf="@+id/imgLogo"
+                app:layout_constraintTop_toBottomOf="@+id/tvQuantity" />
+
+            <TextView
+                android:id="@+id/tvRemoveFromCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_minus3sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:fontFamily="@font/app_regular"
+                android:text="|  Remove from Cart"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvQuantity" />
+
+            <TextView
+                android:id="@+id/tvEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_minus3sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:fontFamily="@font/app_regular"
+                android:text=" Edit "
+                android:textColor="@color/theme_color"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintEnd_toStartOf="@+id/tvRemoveFromCart"
+                app:layout_constraintTop_toBottomOf="@+id/tvQuantity" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+        <View
+            app:layout_constraintTop_toBottomOf="@+id/card"
+            android:layout_width="match_parent"
+            android:background="@color/grey_hint"
+            android:layout_height="@dimen/_7sdp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

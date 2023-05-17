@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="app_theme_color">#002F58</color>
+    <color name="theme_color">#002F58</color>
+    <color name="grey">#525252</color>
+    <color name="grey_hint">#DCDCDC</color>
+    <color name="grey_edittext_hint">#A6A4A4</color>
+    <color name="text_grey">#EAEAEA</color>
+    <color name="light_black">#1D1D1B</color>
+    <color name="light2_black">#595959</color>
+    <color name="red_light">#FF7777</color>
+    <color name="transparent">#00000000</color>
+    <color name="c_A11414">#A11414</color>
+    <color name="red">#FF0000</color>
+    <color name="c_A9AC00">#A9AC00</color>
+    <color name="c_545454">#545454</color>
+    <color name="light_green">#69D258</color>
+
+    <color name="filter_aqua">#47e8cd</color>
+    <color name="filter_black">#000000</color>
+    <color name="filter_blue">#1e73be</color>
+    <color name="filter_brown">#9e581f</color>
+    <color name="filter_grey">#7c7c7c</color>
+    <color name="filter_green">#23a300</color>
+    <color name="filter_lavender">#d4d4f9</color>
+    <color name="filter_pink">#f98e8e</color>
+    <color name="filter_red">#dd3333</color>
+    <color name="filter_yellow">#efd700</color>
+    <color name="filter_white">#ffffff</color>
+</resources>

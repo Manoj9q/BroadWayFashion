@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment"
+    >
+    <fragment
+        android:id="@+id/homeFragment"
+        android:label="HomeFragment"
+        android:name="com.app.broadwayfashion.view.fragments.HomeFragment" >
+        <action
+            android:id="@+id/categoriesFragment"
+            app:destination="@id/categoriesFragment" />
+        <action
+            android:id="@+id/outwearFragment"
+            app:destination="@id/outwearFragment" />
+
+        <action
+            android:id="@+id/searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/profileFragment"
+        app:popUpTo="@+id/homeFragment"
+        android:label="profileFragment"
+        android:name="com.app.broadwayfashion.view.fragments.ProfileFragment" />
+    <fragment
+        android:id="@+id/profileWithoutLogin"
+        app:popUpTo="@+id/homeFragment"
+        android:label="profileWithoutLogin"
+        android:name="com.app.broadwayfashion.view.fragments.ProfileWithoutLogin" />
+
+    <fragment
+        android:id="@+id/searchFragment"
+        app:popUpTo="@+id/homeFragment"
+        android:label="searchFragment"
+        android:name="com.app.broadwayfashion.view.fragments.SearchFragment" />
+
+
+
+    <fragment
+        app:popUpTo="@+id/homeFragment"
+        android:id="@+id/wishListFragment"
+        android:label="WishListFragment"
+        android:name="com.app.broadwayfashion.view.fragments.WishListFragment" />
+
+    <fragment
+        android:id="@+id/categoriesFragment"
+        app:popUpTo="@+id/homeFragment"
+        android:label="CategoriesFragment"
+        android:name="com.app.broadwayfashion.view.fragments.CategoriesFragment" >
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/outwearFragment"
+        app:popUpTo="@+id/homeFragment"
+        android:label="OutwearFragment"
+        android:name="com.app.broadwayfashion.view.fragments.OutwearFragment" >
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+</navigation>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/viewCircle"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/ic_circle_white"
+            android:backgroundTint="@color/light_green"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="@dimen/_9sdp"
+                android:layout_height="@dimen/_9sdp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_tick_icon"
+                app:tint="@color/white" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/_3sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:background="@drawable/ic_green_line"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewCircle" />
+
+
+        <TextView
+            android:id="@+id/tvOrderStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/app_semi_bold"
+            android:text="Order Placed"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toEndOf="@+id/viewCircle"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvStatusTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:fontFamily="@font/app_regular2"
+            android:text="2:30 PM"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/_11sdp"
+            app:layout_constraintStart_toEndOf="@+id/viewCircle"
+            app:layout_constraintTop_toBottomOf="@+id/tvOrderStatus" />
+
+        <TextView
+            android:id="@+id/tvStatusDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:fontFamily="@font/app_regular2"
+            android:text="March 13"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/_11sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
